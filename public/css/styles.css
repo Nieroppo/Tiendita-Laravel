@@ -1,0 +1,123 @@
+.card img {
+    width: 100%;
+    max-height: 20rem;   
+    
+}
+.producto img {
+    
+    max-height: 20rem;
+}
+.card a{
+    text-decoration: none!important;
+}
+.calificacion {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left
+}
+
+.calificacion>input {
+    display: none
+}
+
+.calificacion>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #fdcc00;
+    cursor: pointer
+}
+
+.calificacion>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.calificacion>label:hover:before,
+.calificacion>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.calificacion>input:checked~label:before {
+    opacity: 1
+}
+
+.calificacion:hover>input:checked~label:before {
+    opacity: 0.4
+}
+#cantidad{
+    width: 3.5rem!important;
+    margin-bottom: 0.5rem!important;
+}
+.container{
+    background-color: #fff;
+    padding: 0.5rem 0.8rem;    
+}
+main.py-4{
+    padding: 0!important;
+}
+.producto.row.justify-content-center {
+    margin-bottom: 2rem;
+}
+.payment
+	{
+		border:1px solid #f2f2f2;
+		height:280px;
+        border-radius:20px;
+        background:#fff;
+	}
+   .payment_header
+   {
+	   background:rgba(255,102,0,1);
+	   padding:20px;
+       border-radius:20px 20px 0px 0px;
+	   
+   }
+   
+   .check
+   {
+	   margin:0px auto;
+	   width:50px;
+	   height:50px;
+	   border-radius:100%;
+	   background:#fff;
+	   text-align:center;
+   }
+   
+   .check i
+   {
+	   vertical-align:middle;
+	   line-height:50px;
+	   font-size:30px;
+   }
+
+    .content 
+    {
+        text-align:center;
+    }
+
+    .content  h1
+    {
+        font-size:25px;
+        padding-top:25px;
+    }
+
+    .content a
+    {
+        width:200px;
+        height:35px;
+        color:#fff;
+        border-radius:30px;
+        padding:5px 10px;
+        background:rgba(255,102,0,1);
+        transition:all ease-in-out 0.3s;
+    }
+
+    .content a:hover
+    {
+        text-decoration:none;
+        background:#000;
+    }
